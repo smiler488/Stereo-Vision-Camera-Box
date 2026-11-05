@@ -1,0 +1,5 @@
+numpy>=1.21
+# contrib build includes cv2.ximgproc for the WLS disparity filter
+opencv-contrib-python>=4.6
+pillow>=9.0
+# tkinter ships with Python (on Linux: sudo apt install python3-tk)

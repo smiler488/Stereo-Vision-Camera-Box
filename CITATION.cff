@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software or hardware design, please cite it as below."
+title: "Stereo-Vision-Camera-Box: a low-cost stereo imaging box for plant organs"
+type: software
+authors:
+  - family-names: Deng
+    given-names: Liangchao
+repository-code: "https://github.com/smiler488/Stereo-Vision-Camera-Box"
+license: MIT
+date-released: "2025-09-18"
+keywords:
+  - stereo vision
+  - plant phenotyping
+  - point cloud
+  - leaf
