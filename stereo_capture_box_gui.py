@@ -21,16 +21,21 @@ License: MIT
 
 import argparse
 import json
-import os
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
 
 import cv2
 import numpy as np
-import tkinter as tk
-from tkinter import messagebox, ttk
-from PIL import Image, ImageTk
+from PIL import Image
+
+try:  # the GUI needs Tk; StereoRig and the helpers work without it
+    import tkinter as tk
+    from tkinter import messagebox, ttk
+    from PIL import ImageTk
+except ImportError:  # pragma: no cover - depends on the Python build
+    tk = None
 
 # ---------------------------------------------------------------------------
 # Calibration
@@ -342,6 +347,8 @@ def main(argv=None):
     ap.add_argument("--no-wls", action="store_true", help="disable the WLS disparity filter")
     args = ap.parse_args(argv)
 
+    if tk is None:
+        sys.exit("Tkinter is not available. On Debian/Ubuntu: sudo apt install python3-tk")
     params, source = load_params(args.calib)
     rig = StereoRig(params, num_disp=args.num_disp, use_wls=not args.no_wls)
 
