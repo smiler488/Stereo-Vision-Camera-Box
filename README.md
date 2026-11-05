@@ -2,6 +2,7 @@
 
 English | [中文](README.zh-CN.md)
 
+[![CI](https://github.com/smiler488/Stereo-Vision-Camera-Box/actions/workflows/test.yml/badge.svg)](https://github.com/smiler488/Stereo-Vision-Camera-Box/actions/workflows/test.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Python 3.9+](https://img.shields.io/badge/Python_3.9%2B-informational)
 A closed, evenly lit box with a USB stereo camera in the lid, plus a small Python GUI that captures rectified image pairs, disparity maps and coloured point clouds sample by sample.
 
 I built it to image detached cotton leaves and other small organs indoors. In the field or under room light the stereo matching kept failing on shiny or shaded leaf surfaces. Inside the box the light is the same for every sample, so the disparity maps are much cleaner.

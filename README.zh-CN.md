@@ -2,6 +2,7 @@
 
 [English](README.md) | 中文
 
+[![CI](https://github.com/smiler488/Stereo-Vision-Camera-Box/actions/workflows/test.yml/badge.svg)](https://github.com/smiler488/Stereo-Vision-Camera-Box/actions/workflows/test.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Python 3.9+](https://img.shields.io/badge/Python_3.9%2B-informational)
 一个光照均匀的封闭箱体，盖子上装 USB 双目相机，配一个 Python 图形界面，按样品逐个采集校正后的左右图像、视差图和彩色点云。
 
 我做这个箱子是为了在室内拍离体的棉花叶片等小器官。在田间或室内自然光下，叶片表面反光、有阴影，立体匹配经常失败。放进箱子以后，每个样品的光照条件一致，视差图干净了很多。
